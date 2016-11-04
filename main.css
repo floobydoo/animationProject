@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+.text{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+body {
+  background-image: url("bg.jpg");
+  background-color: #cccccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
