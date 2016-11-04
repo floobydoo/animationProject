@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <title>Animation</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <!-- page content -->
+  <h1 class="text">Retàrré</h1>
+  <svg width="40%" viewBox="0,0,1000,1000">
+    <line x1="730" y1="430" x2="925" y2="820" stroke-width="20" stroke="white"/>
+    <polygon points="710 410, 750 450, 811 575, 875 550, 875 450, 925 475, 925 550, 1000 550" fill="red" stroke="#000"/>
+    <rect x="940" y="810" width="45" height="30" fill="brown" stroke="gold" stroke-width="3"/>
+    <circle  cx="950" cy="380" r="20" fill="brown">
+      <animate begin="click" attributeName="cy" to="840" dur=".4s" fill="freeze"/>
+    </circle>
+    <circle  cx="980" cy="340" r="20" fill="brown">
+      <animate begin="click" attributeName="cy" to="800" dur=".4s" fill="freeze"/>
+    </circle>
+    <circle  cx="940" cy="330" r="20" fill="brown">
+      <animate begin="click" attributeName="cy" to="830" dur=".4s" fill="freeze"/>
+    </circle>
+    <circle  cx="90" cy="100" r="60" fill="yellow">
+      <animate begin="0s; back.end" id="sun" attributeName="cx" to="900" dur="40s" fill="freeze"/>
+      <animate begin="sun.end" id="back" attributeName="cx" to="90" dur="40s" fill="freeze"/>
+      <animate begin="click" attributeName="opacity" to="0" dur=".2s" fill="freeze"/>
+      <animate begin="click" id="waw" attributeName="cy" to="800" dur=".6s" fill="freeze"/>
+      <animate begin="waw.end" attributeName="cy" to="100" dur=".6s" fill="freeze"/>
+      <animate begin="waw.end" attributeName="opacity" to="1" dur=".2s" fill="freeze"/>
+      <animate begin="waw.end" attributeName="fill" from="yellow" to="#FFFFE0"  fill="freeze" dur=".2s"/>
+    </circle>
+    <rect x="20" y="840" width="220" height="60" fill="#470707">
+      <animate begin="0s; rectb.end" id="recta" attributeName="x" to="620" dur="5s" fill="freeze"/>
+      <animate begin="recta.end" id="rectb" attributeName="x" to="20" dur="5s" fill="freeze"/>
+    </rect>
+    <rect x="60" y="760" width="20" height="95" fill="#470707">
+      <animate begin="0s; rectd.end" id="rectc" attributeName="x" to="660" dur="5s" fill="freeze"/>
+      <animate begin="rectc.end" id="rectd" attributeName="x" to="60" dur="5s" fill="freeze"/>
+    </rect>
+    <rect x="40" y="760" width="20" height="10" fill="#ffffff">
+      <animate begin="0s; rectf.end" id="recte" attributeName="x" to="640" dur="5s" fill="freeze"/>
+      <animate begin="recte.end" id="rectf" attributeName="x" to="40" dur="5s" fill="freeze"/>
+    </rect>
+    <rect x="000" y="840" width="260" height="10" fill="#000000">
+      <animate begin="0s; rectg.end" id="recth" attributeName="x" to="600" dur="5s" fill="freeze"/>
+      <animate begin="recth.end" id="rectg" attributeName="x" to="0" dur="5s" fill="freeze"/>
+    </rect>
+    <polygon fill="brown" stroke="gold" stroke-width="3" points="963,790 940,810 985,810"></polygon>
+  </svg>
+</body>
+</html>
